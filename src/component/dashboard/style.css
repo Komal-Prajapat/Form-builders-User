@@ -1,0 +1,24 @@
+/* style.css */
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .buttons-container .ui.button {
+    margin: 0 10px;
+  }
+  
+  .toast-container {
+    position: relative;
+    top: 150px;
+    left: 40%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  

@@ -291,7 +291,7 @@ const FormCom = ({ formFields }) => {
     {/* Your form fields */}
     {formFields.map((field, index) => renderInputField(field, index))}
   </div>
-  <button onClick={navigateToForm} className="backtoform">Back to Form</button>
+  <button onClick={navigateToForm} className="backtoform">Save Form</button>
 </div>
 
         );
