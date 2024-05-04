@@ -1,0 +1,58 @@
+/* form.css */
+/* Common styles */
+.error-message {
+    font-size: x-small;
+    color: red;
+    margin-top: 6px;
+  }
+  
+  /* Add custom styles for form labels */
+  .form-label {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Add custom styles for form inputs */
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Add custom styles for submit button */
+  .submit-button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .form-container {
+    background: white;
+    padding: 30px;
+    box-shadow: 0px 0px 20px rgba(29, 27, 27, 0.2);
+    position: relative;
+    left: -13px;
+    height: 400px;
+    margin-top: 10px;
+  }
+  
+  .container {
+    margin-top: 10px;
+  }
+  
+  .image {
+    height: 400px;
+  }
+  
