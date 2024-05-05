@@ -56,7 +56,7 @@ const Register = () => {
           >
             <Form>
               <div className="form-group">
-              <h2 style={{textAlign:"center"}}> Register </h2>
+              <b><ul><p style={{textAlign:"center", }} className="heading"> Register </p></ul></b>
                 <label htmlFor="name" className="form-label">Name</label>
                 <Field type="text" name="name" className="form-control form-input" />
                 <ErrorMessage name="name" component="div" className="error-message" />
