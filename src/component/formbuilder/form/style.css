@@ -56,6 +56,10 @@
   /* background: #000; */
 position: fixed;
 top: 100px;
-left: 1px;
+left: 100px;
+width: 400px;
+}
+.backtoform{
+  margin-left: 10px;
 }
 }

@@ -70,7 +70,7 @@ const Register = () => {
                 <Field type="password" name="password" className="form-control form-input" />
                 <ErrorMessage name="password" component="div" className="error-message" />
               </div>
-              <button type="submit" className="btn btn-primary submit-button">Submit</button>
+              <button type="submit" className="btn btn-primary   submit-button">Submit</button>
               <p className="mt-3">
                 If already have an account, then <Link to="/login">Login</Link>
               </p>
