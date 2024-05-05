@@ -1,4 +1,11 @@
 /* style.css */
+.topbar{
+      background: #000;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      padding: 10px;
+
+}
+
 .buttons-container {
     display: flex;
     justify-content: center;
@@ -10,7 +17,7 @@
   }
   
   .toast-container {
-    position: relative;
+    position: fixed;
     top: 150px;
     left: 40%;
     transform: translateX(-50%);
@@ -20,4 +27,61 @@
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   }
+  .btn{
+    color: white;
+    background: #754848;
+    margin-left: 10px;
+  }
+  .btn:hover{
+    background: gray;
+  }
+  .welcome-msg {
+    /* margin-left: 100px; */
+    margin-top: 150px;
+    padding: 10px;
+    width: 500px;
+    font-size: xx-large;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); 
+    animation: shadowAnimation 2s infinite alternate; 
+  }
   
+  
+  @keyframes shadowAnimation {
+    from {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    to {
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    }
+  }
+   
+@media (max-width: 768px) {
+.topbar{
+  background: whitesmoke;
+  margin-left: 50px;
+  width: 100%;
+  padding: 10px;
+}
+.deletecontainer{
+  /* background: #000; */
+position: fixed;
+top: 300px;
+}
+.welcome-msg {
+  margin-left: 100px;
+  width: 500px;
+  font-size: xx-large;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); 
+  animation: shadowAnimation 2s infinite alternate; 
+}
+
+
+@keyframes shadowAnimation {
+  from {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  to {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  }
+}
+}

@@ -2,8 +2,8 @@
 .container{
   height: 900px;
   width: 800px;
-  position: relative;
-  left: ;
+    position: relative;
+    left: -200px;
 
 }
 .form-container {
@@ -49,3 +49,13 @@
     margin-top: 10px;
     width: 300px;
   }
+
+    /* Hide field names on smaller devices */
+@media (max-width: 768px) {
+.forsmallerdeviceform{
+  /* background: #000; */
+position: fixed;
+top: 100px;
+left: 1px;
+}
+}

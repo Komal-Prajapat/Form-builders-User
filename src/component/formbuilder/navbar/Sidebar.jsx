@@ -51,19 +51,22 @@ const Sidebar = ({ onFieldSelect }) => {
   const sidebarClass = isOpen ? 'sidebar-container open' : 'sidebar-container';
 
   return (
-    <div className={sidebarClass}>
-      <p className='d-flex'>
+<div className="container">
+<div className={sidebarClass} >
+      <p className='d-flex box'>
         <h2 className="sidebar-title fieldoptions">Field Options</h2>
         {/* <span className="crossicon" onClick={toggleSidebar}><MdOutlineWrongLocation /></span> */}
       </p>
       <ul className="field-list">
         {fieldOptions.map((option, index) => (
           <li key={index} onClick={() => handleFieldSelect(option.name)} className="field-item">
-            <FontAwesomeIcon icon={option.icon} className="field-icon" /> {option.name}
+            <FontAwesomeIcon icon={option.icon} className="field-icon" />
+            <span className="field-name">{option.name}</span> {/* Added span for the field name */}
           </li>
         ))}
       </ul>
     </div>
+</div>
   );
 };
 

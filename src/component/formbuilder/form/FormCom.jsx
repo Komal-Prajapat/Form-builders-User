@@ -286,7 +286,7 @@ const FormCom = ({ formFields }) => {
         };
       
         return (
-          <div className="container" style={{ height: "100vh", overflow: "hidden" }}>
+          <div className="container forsmallerdeviceform" style={{ height: "100vh", overflow: "hidden" }}>
   <div className="form-container" style={{ maxHeight: "calc(100vh - 50px)", overflowY: "auto" }}>
     {/* Your form fields */}
     {formFields.map((field, index) => renderInputField(field, index))}
