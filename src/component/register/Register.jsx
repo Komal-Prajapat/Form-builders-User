@@ -5,6 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import './form.css'
 
 const validationSchema = Yup.object().shape({
   name: Yup.string().min(2, "Name must be at least 2 characters").max(25, "Name must be at most 25 characters").required("Please enter your name"),
