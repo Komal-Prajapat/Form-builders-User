@@ -32,7 +32,7 @@ const Register = () => {
       
       setTimeout(() => {
         console.log("Redirecting to dashboard...");
-        navigate("/dashboard");
+        navigate("/login");
       }, 2000);
     } catch (error) {
       console.error("Error:", error);
@@ -41,7 +41,9 @@ const Register = () => {
   };
 
   return (
-    <div className="container con">
+  <>
+    <h1 className="heading" style={{fontSize:"30px"}}>Register</h1>
+      <div className="container con">
       <div className="row">
 
         <div className="col-md-6 d-md-block d-none ">
@@ -56,7 +58,7 @@ const Register = () => {
           >
             <Form>
               <div className="form-group">
-              <b><ul><p style={{textAlign:"center", }} className="heading"> Register </p></ul></b>
+              {/* <b><ul><p style={{textAlign:"center", }} className="heading"> Register </p></ul></b> */}
                 <label htmlFor="name" className="form-label">Name</label>
                 <Field type="text" name="name" className="form-control form-input" />
                 <ErrorMessage name="name" component="div" className="error-message" />
@@ -82,7 +84,8 @@ const Register = () => {
 
       </div>
     </div>
-  );
+  </>
+  ); 
 };
 
 export default Register;

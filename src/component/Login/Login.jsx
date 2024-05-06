@@ -40,15 +40,18 @@ const Login = () => {
     }
   };
   
+  
   return (
-    <div className="container con">
+  <>
+  <h1 className="heading" style={{fontSize:"30px"}}>Login</h1>
+  <div className="container con">
       <div className="row">
         <div className="col-md-6 d-md-block d-none ">
           <img src="https://static.vecteezy.com/system/resources/previews/000/118/887/original/free-website-vector-elements.jpg" alt="" className="img-fluid image" style={{ height: "400px" }} />
         </div>
         <div className="col-md-6 formcontainer">
           <div className="">
-            <h2>Login</h2>
+            
             <Formik
               initialValues={initialValues}
               validationSchema={validationSchema}
@@ -66,7 +69,7 @@ const Login = () => {
                   <ErrorMessage name="password" component="div" className="error-message" />
                 </div>
                 <button type="submit" className="btn btn-primary submit-button">Login</button>
-                <p className="mt-3">If you don't have an account, <Link to="/">Register</Link></p>
+                <p className="mt-3 " >If you don't have an account, <Link to="/">Register</Link></p>
               </Form>
             </Formik>
           </div>
@@ -74,6 +77,7 @@ const Login = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

@@ -1,5 +1,13 @@
-/* form.css */
-/* Common styles */
+.heading {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: xx-large;
+  color: #007bff;
+  text-transform: uppercase; 
+  font-weight: bold; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
 .error-message {
     font-size: x-small;
     color: red;
@@ -23,7 +31,7 @@
   
   /* Add custom styles for submit button */
   .submit-button {
-    width: 100%;
+    width: 80%;
     padding: 10px;
     margin-top: 10px;
     background-color: #007bff;
