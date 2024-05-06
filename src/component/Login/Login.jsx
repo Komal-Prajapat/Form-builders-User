@@ -42,7 +42,7 @@ const Login = () => {
 
       toast.success("Login successful.");
 
-      // Adding a delay of 2 seconds before redirecting to the dashboard
+    
       setTimeout(() => {
         console.log("Redirecting to dashboard...");
         navigate("/dashboard");
