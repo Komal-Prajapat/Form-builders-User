@@ -25,7 +25,7 @@ const Register = () => {
 
   const handleSubmit = async (values) => {
     try {
-      const response = await axios.post("http://localhost:9090/api/register", values);
+      const response = await axios.post("https://form-builder-api-se7h.onrender.com/api/register", values);
       console.log(response.data); 
       toast.success("Register successful.");
   
