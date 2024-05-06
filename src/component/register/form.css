@@ -60,6 +60,7 @@ body{
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  margin-left: 10%;
   transition: background-color 0.3s ease;
 }
 
@@ -77,5 +78,14 @@ body{
     position: relative;
     left: 300px;
     height: 400px;
+  }
+  .heading{
+    margin-left: 200px;
+    margin-bottom: 20px;
+    font-size: xx-large;
+    color: #1eff00;
+    text-transform: uppercase; 
+    font-weight: bold; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
   }
 }  

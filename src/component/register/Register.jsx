@@ -25,7 +25,7 @@ const Register = () => {
 
   const handleSubmit = async (values) => {
     try {
-      const response = await axios.post("https://form-builder-api-se7h.onrender.com/api/register", values);
+      const response = await axios.post("https://form-builders.onrender.com/api/register", values);
       console.log(response.data); 
       toast.success("Register successful.");
   
@@ -42,7 +42,7 @@ const Register = () => {
 
   return (
   <>
-    <h1 className="heading" style={{fontSize:"30px"}}>Register</h1>
+    <h1  className="heading" >Register</h1>
       <div className="container con">
       <div className="row">
 
