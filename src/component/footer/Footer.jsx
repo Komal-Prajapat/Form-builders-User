@@ -5,7 +5,7 @@ const Footer = () => {
     <div>
       <footer>
       <footer>
-    <div className="footer-content">
+    <div className="footer-content mt-3" >
         <p className='text'>&copy; 2024 komalprajpat. All rights reserved.</p>
         <ul className="footer-links">
             {/* <li><a href="#">Home</a></li>

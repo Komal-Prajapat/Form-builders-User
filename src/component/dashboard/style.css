@@ -36,16 +36,31 @@
   .btn:hover{
     background: gray;
   }
+  
+  @keyframes moveLeftToRight {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(200px); 
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
   .welcome-msg {
-    /* margin-left: 100px; */
     margin-top: 150px;
     padding: 10px;
     width: 500px;
     font-size: xx-large;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); 
-    animation: shadowAnimation 2s infinite alternate; 
+    background-image: linear-gradient(to right, #dc1d1d 20%, #4db52e 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    animation: moveLeftToRight 5s infinite; /* Adjust the duration as needed */
   }
-  
   
   @keyframes shadowAnimation {
     from {
