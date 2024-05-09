@@ -6,7 +6,7 @@ const Footer = () => {
       <footer>
       <footer>
     <div className="footer-content mt-3" >
-        <p className='text'>&copy; 2024 komalprajpat. All rights reserved.</p>
+        <p className='text'>&copy; 2024 komalPrajpat. All rights reserved.</p>
         <ul className="footer-links">
             {/* <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>

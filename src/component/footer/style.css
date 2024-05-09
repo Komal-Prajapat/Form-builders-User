@@ -1,19 +1,20 @@
-.footer-content{
+.footer-content {
     background: #000;
     color: white;
     padding: 3px;
-    position: fixed;
-
-    bottom: 0px;
-width: 100%;
-margin-top: 200px;
+    /* position: fixed;
+    bottom: 10px; */
+    width: 100%;
+  
 }
-.text{
+
+.text {
     text-align: center;
 }
+
 @media (max-width: 768px) {
-    .text{
-       text-align: center;
-   
+    .text {
+        text-align: center;
+
     }
-  }  
+}
