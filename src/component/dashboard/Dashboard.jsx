@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Sidebar from "../formbuilder/navbar/Sidebar";
 import FormCom from "../formbuilder/form/FormCom";
-import { Button } from 'semantic-ui-react'; // Assuming you are using Semantic UI React for toast messages
-import './style.css'
+import { Button } from "semantic-ui-react"; // Assuming you are using Semantic UI React for toast messages
+import "./style.css";
 
 const Dashboard = () => {
   const [formFields, setFormFields] = useState([]);
@@ -21,7 +21,7 @@ const Dashboard = () => {
 
   const handleDelete = () => {
     setFormFields([]);
-    setShowForm(false); 
+    setShowForm(false);
     setShowToast(true);
   };
 
@@ -29,9 +29,19 @@ const Dashboard = () => {
     <div className="container-fluid">
       <div className="row">
         <div className="col-md-10 offset-md-2 col-lg-8 offset-lg-4 col-xl-6 offset-xl-3">
-          <div className="topbar">
-            <Button onClick={handleCreate} className="btn  btncreate">Create</Button>
-            <Button onClick={handleDelete} className="btn btndelete">Delete</Button>
+          <div className="topbar" style={{ width: "100%" }}>
+            <Button onClick={handleCreate} className="btn  btncreate">
+              Create
+            </Button>
+            <Button onClick={handleDelete} className="btn btndelete">
+              Delete
+            </Button>{" "}
+            <Button  className="btn btndelete">
+             Save Form 
+            </Button>{" "}
+            <Button  className="btn btndelete">
+             Form Perview
+            </Button>
           </div>
           {showWelcomeMsg && (
             <div className="welcome-msg">
@@ -50,10 +60,8 @@ const Dashboard = () => {
         </div>
       </div>
 
-   
       {showToast && (
         <div className="toast-container deletecontainer">
-        
           <p>Form deleted successfully!</p>
         </div>
       )}
