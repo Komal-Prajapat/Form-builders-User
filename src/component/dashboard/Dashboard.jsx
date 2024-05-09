@@ -36,12 +36,12 @@ const Dashboard = () => {
             <Button onClick={handleDelete} className="btn btndelete">
               Delete
             </Button>{" "}
-            <Button  className="btn btndelete">
+            {/* <Button  className="btn btndelete">
              Save Form 
             </Button>{" "}
             <Button  className="btn btndelete">
              Form Perview
-            </Button>
+            </Button> */}
           </div>
           {showWelcomeMsg && (
             <div className="welcome-msg">
